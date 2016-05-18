@@ -10,8 +10,20 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        int myAge = 32;
+        int myAgeInTenYears = myAge + 10;
+        float daysInYear = 365.25;
+        float daysPassed = myAge * daysInYear; // Надо узнать текушию дату
+        NSString * firstString = @"I can";
+        NSString * secondString = @"code";
+        
+        
+        NSLog(@"%@ %@!", firstString, secondString);
+        NSLog(@"Через 10 лет мне будет %d лет, с момента моего рождения пройдет %f дней.", myAgeInTenYears, daysPassed); //По нормальному надо узновать сколько лет и писать "лет" или "года".
+        NSLog(@"Через 10 лет мне будет %d лет, с момента моего рождения пройдет %f дней.", myAgeInTenYears, floor(daysPassed));
+        NSLog(@"Через 10 лет мне будет %d лет, с момента моего рождения пройдет %f дней.", myAgeInTenYears, ceil(daysPassed));
+        
+        
     }
     return 0;
 }
